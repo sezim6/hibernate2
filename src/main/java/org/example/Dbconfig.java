@@ -19,7 +19,7 @@ public class Dbconfig {
             properties.setProperty(Environment.SHOW_SQL, "true");
             properties.setProperty(Environment.DRIVER, "org.postgresql.Driver");
             properties.setProperty(Environment.DIALECT, "org.hibernate.dialect.PostgreSQLDialect");
-            properties.setProperty(Environment.HBM2DDL_AUTO,"create");
+            properties.setProperty(Environment.HBM2DDL_AUTO,"validate");
             configuration.setProperties(properties);
             configuration.addAnnotatedClass(City.class);
             configuration.addAnnotatedClass(Region.class);
